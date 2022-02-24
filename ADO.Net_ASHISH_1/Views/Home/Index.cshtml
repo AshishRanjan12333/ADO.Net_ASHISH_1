@@ -1,0 +1,32 @@
+﻿
+@model IEnumerable<ADO.Net_ASHISH_1.Models.Employee>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Employee</h1>
+    <table class=" table table-bordered">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>gender</th>
+            <th>mobile</th>
+            <th>depart_name</th>
+        </tr>
+        @foreach(var emp in Model){
+    <tr>
+        <td>@emp.id</td>
+        <td>@emp.name</td>
+        <td>@emp.email</td>
+        <td>@emp.gender</td>
+        <td>@emp.mobile</td>
+        
+        v
+    </tr>
+
+        }
+    </table>
+</div>
